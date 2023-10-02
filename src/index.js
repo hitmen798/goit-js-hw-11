@@ -56,6 +56,8 @@ async function onSubmitPhoto(e) {
       'Sorry, the search field cannot be empty. Please enter information to search.'
     );
   }
+  page = 1;
+  
   const { data } = await searchPhoto(namePhoto); // значення що сформоване
 
   cardPhoto(data); // формування картки
